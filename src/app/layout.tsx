@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "",
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-stone-700">
+      <body className="bg-stone-900">
         {children}
       </body>
     </html>
