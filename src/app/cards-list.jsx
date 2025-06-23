@@ -66,12 +66,12 @@ export default function CardsList() {
               rotateZ: 0,
             }}
             whileHover={i !== 0 ? { rotateZ: 8, scale: 1.05 } : {}}
-            className={`max-w-[600px] absolute w-[50%] h-[80vh] ${colours[i]} rounded-3xl text-white`}
+            className={`max-w-[500px] absolute w-[50%] h-[80vh] ${colours[i]} rounded-3xl text-white`}
             onClick={() => {
               switchCurrentCard(i);
             }}
           >
-            <h1 className="w-fit text-center text-4xl font-bold mt-5">
+            <h1 className="text-center text-4xl font-bold mt-5 text-highlight">
               {card.title}
             </h1>
           </motion.div>

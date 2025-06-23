@@ -8,17 +8,17 @@ import Image from "next/image";
 export default function SummaryCard({ toggleCards }) {
   return (
     <motion.div
-      className="w-3/4 max-w-[600px] bg-stone-800 h-fit pb-[5vh] m-auto mt-[30vh] text-white rounded-3xl"
+      className="w-3/4 max-w-[600px] bg-radial from-test to-stone-800 h-fit pb-[5vh] m-auto mt-[30vh] text-white rounded-3xl"
       initial={{ marginTop: "-500px" }}
       animate={{ marginTop: "35vh" }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
     >
       <div className="flex justify-around items-center sm:flex-row flex-col">
         <motion.div
           className="pt-[5vh]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.5 }}
+          transition={{ duration: 1, delay: 1.2 }}
         >
           <h1
             className={`${ubuntu.className} font-bold text-4xl text-highlight`}
@@ -81,7 +81,7 @@ export default function SummaryCard({ toggleCards }) {
           className="w-[50%] mt-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.5 }}
+          transition={{ duration: 1, delay: 1.2 }}
         >
           <motion.button
             whileHover={{ rotateZ: -1 }}

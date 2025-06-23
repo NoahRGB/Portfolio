@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,6 +23,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/canvas.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/canvas.jsx",
+    "src/app/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }

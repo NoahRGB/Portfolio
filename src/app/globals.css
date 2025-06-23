@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --color-highlight: #FFC145;
+  --color-highlight: #ffc145;
+  --color-test: #403d38;
 }
