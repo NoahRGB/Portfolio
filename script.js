@@ -1,18 +1,20 @@
-let header = document.getElementById("header");
-let headerBgX = 0;
-let headerBgY = 0;
-let headerBgVx = 0.2;
-let headerBgVy = 0.25;
+let titles = document.getElementsByClassName("title-container")
+let titleBgX = 0;
+let titleBgY = 0;
+let titleBgVx = 0.9;
+let titleBgVy = 0.1;
 
 const animate = () => {
-  headerBgVx += (Math.random() - 0.5) * 0.02;
-  headerBgVy += (Math.random() - 0.5) * 0.02;
 
-  headerBgX += headerBgVx;
-  headerBgY += headerBgVy;
+  titleBgVx += (Math.random() - 0.5) * 0.02;
+  titleBgVy += (Math.random() - 0.5) * 0.02;
 
-  header.style.backgroundPosition =
-    `${headerBgX}px ${headerBgY}px`;
+  titleBgX += titleBgVx;
+  titleBgY += titleBgVy;
+
+	for (title of titles) {
+		title.style.backgroundPosition =	`${titleBgX}px ${titleBgY}px`;
+	}
 
   requestAnimationFrame(animate);
 }

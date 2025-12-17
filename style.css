@@ -9,19 +9,34 @@
 }
 
 .topgap { margin-top: 2vh; }
+.topgap-sm { margin-top: 1vh; }
+.topgap-l { margin-top: 5vh; }
 .general-text { font-size: 1.2rem; }
+.text-align-fix { position: relative; left: -0.04em; }
+.fullwidth { width: 100%; }
+.halfwidth { width: 50%; }
+.quarter-leftgap { margin-left: 25%; }
 
 body {
 
 }
 
-.centred {
-	width: fit-content;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("assets/bg8.svg") repeat;
+  opacity: 0.04;         
+}
+
+.main {
+	width: 550px;
 	margin: auto;
 }
 
-#title-container {
-	background: url("assets/bg2.jpg"), white;
+.title-container {
+	background-color: #979797;
+	background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230c0c0c' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 	background-clip: text;
 	background-size: 300px;
 	color: transparent;	
@@ -31,6 +46,12 @@ body {
 	position: relative;
 	left: -0.04em;
 	font-size: 10rem;
+	font-family: "BBH Bogle", sans-serif;
+	line-height: 0.9;
+}
+
+.subtitle {
+	font-size: 4rem;
 	font-family: "BBH Bogle", sans-serif;
 	line-height: 0.9;
 }
