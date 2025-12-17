@@ -25,6 +25,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
+	z-index: -1;
   background: url("assets/bg8.svg") repeat;
   opacity: 0.04;         
 }
