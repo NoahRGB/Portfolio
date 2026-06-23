@@ -4,78 +4,98 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Noah Cox</title>
     <link rel="stylesheet" href="style.css">
 		<script src="script.js" defer></script>
   </head>
 
   <body>
-		<div class="main">
-			<div id="header">
 
-				<div class="title-container">
-					<h1 class="title text-align-fix">Noah Cox</h1>
+		<div id="content">
+
+			<div id="inner">
+				
+				<br/>
+
+				<h1 class="center bold xxxlarge">Noah Cox</h1>
+
+				<br/>
+
+				<div class="icons-container">
+
+					<a class="fit-width" target="_blank" href="https://github.com/NoahRGB">
+						<div class="img-container">
+							<img width="40px" src="./assets/github.svg"/>
+							<p class="lgap large">NoahRGB</p>
+						</div>
+					</a>
+
+					<a class="fit-width" target="_blank" href="mailto:ncox2004@gmail.com">
+						<div class="tgap img-container">
+							<img width="40px" src="./assets/mail.png"/>
+							<p class="lgap large">ncox2004@gmail.com</p>
+						</div>
+					</a>
+
+					<a class="fit-width" target="_blank" href="https://www.linkedin.com/in/noah-cox-21496b34b/">
+						<div class="tgap img-container">
+							<img width="35px" src="./assets/linkedin.png"/>
+							<p class="lgap large">Noah Cox</p>
+						</div>
+					</a>
+
 				</div>
 
-				<div class="duo-container">
-					<a target="_blank" href="mailto:ncox2004@gmail.com"><img src="assets/mail.png" width="35px" alt=""></a>
-					<p class="general-text">ncox2004@gmail.com</p>
+				<br/><br/>
+
+				<p class="xlarge center">I am interested in AI/ML/RL and computer graphics programming</p>
+
+				<br/><br/><br/>
+
+				<p class="xxlarge bold">Projects</p>
+
+				<br/>
+
+				<a class="fit-width" target="_blank" href="https://www.github.com/noahrgb/reinforcement-learning">
+					<p class="xlarge underline">Deep reinforcement learning</p>
+				</a>
+
+				<div class="tgap img-container">
+					<img class="gif" src="./assets/ppo_hopper.gif"/>
+					<img class="gif" src="./assets/dqn_carracing.gif"/>
 				</div>
 
-				<div class="duo-container">
-					<a target="_blank" href="https://github.com/NoahRGB"><img src="assets/github.svg" width="35px" alt=""></a>
-					<p class="general-text">NoahRGB</p>
+				<p class="tgap large">An ongoing project in which I have implemented many deep RL algorithms using Python/PyTorch
+				to solve a range of RL environments (cartpole, lunar lander, Atari games, robotics simulations, etc.)</p>
+
+				<a class="fit-width" target="_blank" href="https://www.github.com/noahrgb/reinforcement-learning">
+					<p class="tgap underline large">For more details see the GitHub repo</p>
+				</a>
+
+				<br/><br/><br/>
+
+				<a class="fit-width" target="_blank" href="https://www.github.com/noahrgb/CUDA-Ray-Tracer">
+					<p class="xlarge underline">Real-time ray tracer</p>
+				</a>
+
+				<div class="tgap img-container">
+					<img class="gif" src="./assets/rtgif.gif"/>
+					<img class="gif" src="./assets/rt2.jpg"/>
 				</div>
 
-				<div class="duo-container">
-					<a target="_blank" href="https://www.google.com"><img src="assets/linkedin.png" width="35px" alt=""></a>
-					<p class="general-text">Noah Cox</p>
-				</div>
+				<p class="tgap large">A real-time ray tracer made in C++ with OpenGL, GLFW and NVIDIA CUDA for GPU programming.
+				It supports primitive shapes like spheres, cubes as well as custom 3D models with a range of graphical
+				effects like reflections, hard/soft shadows, anti-aliasing, etc.</p>
 
-			</div> <!-- header -->
+				<a class="fit-width" target="_blank" href="https://www.github.com/noahrgb/CUDA-Ray-Tracer">
+					<p class="tgap underline large">For more details see the GitHub repo</p>
+				</a>
 
-			<div class="horizontal-line topgap"></div>
+				<br/><br/>
+
+			</div>
 			
-			<p class="general-text topgap">I am very interested in graphics programming and reinforcement learning</p>
-			<p class="general-text topgap">I achieved a First Class BSc in Computer Science at The University of East Anglia in July 2025</p>
-
-			<div class="title-container topgap">
-				<h1 class="subtitle">Projects</h1>
-			</div>
-
-			<div class="project-container topgap">
-				<div class="horizontal-line"></div>	
-				<div class="title-container topgap">
-					<h2>Realtime raytracer</h1>
-				</div>
-				<p class="general-text">My undergraduate dissertation involved creating a realtime ray tracer using NVIDIA CUDA, OpenGL and GLFW.<br/>
-				The program takes an array of pixels and turns it into a scene using only ray tracing techniques with the GPU through CUDA. OpenGL/GLFW are then used to create
-				a window and project those pixels onto a texture which is displayed in the window</p>
-
-				<p class="general-text">More details can be found <a target="_blank" href="https://github.com/NoahRGB/CUDA-Ray-Tracer">here</a></p>
-
-				<div class="duo-container topgap">
-					<img class="halfwidth" src="assets/rt2.jpg" alt="">
-					<img class="halfwidth" src="assets/rt3.jpg" alt="">
-				</div>
-				<div class="duo-container topgap-sm">
-					<img class="halfwidth" src="assets/rt1.jpg" alt="">
-					<img class="halfwidth" src="assets/rtgif.gif" alt="">
-				</div>
-
-			</div> <!-- project container -->
-
-			<div class="project-container topgap-l">
-				<div class="horizontal-line"></div>	
-				<div class="title-container topgap">
-					<h2>reeaaaar</h1>
-				</div>
-			</div>
-
-
-			<br/><br/><br/><br/><br/>
-		</div> <!-- main --> 
+		</div>
 
   </body>
 

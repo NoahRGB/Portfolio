@@ -1,71 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 	
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Poppins", sans-serif;
+	font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
-.topgap { margin-top: 2vh; }
-.topgap-sm { margin-top: 1vh; }
-.topgap-l { margin-top: 5vh; }
-.general-text { font-size: 1.2rem; }
-.text-align-fix { position: relative; left: -0.04em; }
-.fullwidth { width: 100%; }
-.halfwidth { width: 50%; }
-.quarter-leftgap { margin-left: 25%; }
+.tgap { margin-top: 10px; }
+.lgap { margin-left: 10px; }
+.center { text-align: center; }
+.fit-width { width: fit-content; }
+.underline { text-decoration: underline; }
+.bold { font-weight: 800; }
 
-body {
+.large { font-size: large; }
+.xlarge { font-size: x-large; }
+.xxlarge { font-size: xx-large; }
+.xxxlarge { font-size: xxx-large; }
 
+a {
+	text-decoration: none;
+	color: black;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-	z-index: -1;
-  background: url("assets/bg8.svg") repeat;
-  opacity: 0.04;         
+#content {
+	width: 50%;
+	margin: auto;
+	/* background-color: #bdbdbd; */
 }
 
-.main {
-	width: 550px;
+#inner {
+	width: 90%;
 	margin: auto;
 }
 
-.title-container {
-	background-color: #979797;
-	background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%230c0c0c' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-	background-clip: text;
-	background-size: 300px;
-	color: transparent;	
+.icons-container {
+	width: fit-content;
+	margin: auto;
 }
 
-.title {
-	position: relative;
-	left: -0.04em;
-	font-size: 10rem;
-	font-family: "BBH Bogle", sans-serif;
-	line-height: 0.9;
-}
-
-.subtitle {
-	font-size: 4rem;
-	font-family: "BBH Bogle", sans-serif;
-	line-height: 0.9;
-}
-
-.duo-container {
+.img-container {
 	display: flex;
+	width: fit-content;
 	flex-direction: row;
 	align-items: center;
-	gap: 10px;
+	justify-content: left;
 }
 
-.horizontal-line {
-	height: 1px;
-	width: 100%;
-	background: black;
+.gif {
+	width: 50%;
+}
+
+@media (max-width: 1000px) {
+	#content {
+		width: 80%;
+
+	}
+
 }
